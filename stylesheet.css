@@ -110,8 +110,25 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   }
-.privatside {height:100vh;background-image: url(images/privatside.jpg); background-position: center}
-.erhvervside {height:100vh;background-image: url(images/erhvervside.jpg); background-position: inherit}
-.baggrundsbillede {width:100%;}
+.privatside {width: 100%; height: 100vh;}
+.erhvervside { }
 
+#privat {
+  width: 100%;
+}
 
+#erhverv {
+  width: 100%;
+}
+
+#bjerretekst {
+  position: absolute;
+      left: 16px;
+      padding-left: 44%;
+}
+
+#leathertekst {
+  position: absolute;
+    left: 16px;
+    padding-left: 49%;
+}
