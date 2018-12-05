@@ -24,3 +24,34 @@ h1 {
 .l {
   color: #323232;
 }
+
+.tryk {
+    background: rgba(0, 0, 0, 0);
+    border: solid 2px; color: #323232;
+    color: #323232;
+    padding: 0.5% 1%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 43%;
+    margin-top: 38%;
+    font-family: 'Montserrat', sans-serif;
+  
+
+}
+
+.trykp {
+    background: rgba(0, 0, 0, 0);
+    border: solid 2px; color: #323232;
+    color: #323232;
+    padding: 0.5% 2%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 20%;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
