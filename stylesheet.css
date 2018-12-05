@@ -16,18 +16,19 @@ nav {
   float: left;
   padding-left: 8%;
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 nav ul {
   list-style: none;
   float:right;
   padding-top: 8px;
+  font-size: 25px;
 }
 
 nav li {
   float:left;
-  padding-right: 20px;
+  padding-right: 30px;
 }
 
 .hero {
@@ -61,22 +62,25 @@ header {
 }
 
 .info1 {
-  max-width: 500px;
+  max-width: 700px;
   padding: 20% 10% 0 10%;
   text-align: center;
   justify-content: center;
+  font-size: 25px;
 }
 .info2 {
-  max-width: 500px;
+  max-width: 600px;
   padding: 20% 10% 0 20%;
   text-align: center;
   justify-content: center;
+  font-size: 25px;
 }
 .info3 {
-  max-width: 400px;
+  max-width: 600px;
   padding: 30% 10% 0 10%;
   text-align: center;
   justify-content: center;
+  font-size: 25px;
 }
 
 .box1 {
