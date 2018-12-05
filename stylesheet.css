@@ -2,14 +2,22 @@ body, html {
   margin:0;
   padding:0;
   font-family: 'Montserrat', sans-serif;
+  width: 100%;
 }
 
 header {
-
+  height: 100%;
 }
 
 nav {
   width: 95%;
+}
+
+nav p {
+  float: left;
+  padding-left: 10%;
+  font-weight: bolder;
+  font-size: 20px;
 }
 
 nav ul {
@@ -22,13 +30,29 @@ nav li {
   padding-right: 30px;
 }
 
+.hero {
+  clear: both;
+}
+
 header {
   clear: both;
-  height: 200px;
+  height: 50px;
 }
 
 .main {
-  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  }
+
+.info1 {
+  width: 70%;
+  text-align: center;
+}
+.info2 {
+  width: 70%;
+  text-align: center;
+}
+.info3 {
+  padding: 40px;
+  text-align: center;
 }
