@@ -103,6 +103,41 @@ header {
   width: 100%;
 }
 
+--------/*Samarbejdspartnere */--------
+
+#samarbejdspartnere {  
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    font-size: 20px;
+}
+
+.samarbejdspartnere {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  }
+
+.box4 {
+    width: 100%;
+    background-image: url(images/hotel-marriott.jpg);
+    background-repeat: no-repeat;
+    height: 100px;
+}
+
+
+
+.box5 {
+    width: 100%;
+    background-image: url(images/velofit.jpg);
+    background-repeat: no-repeat;
+    
+}
+
+.box6 {
+    width: 100%;
+    background-image: url(images/erik-arkitekter.jpg);
+    background-repeat: no-repeat;
+}
 
 --------/*til landingpage */--------
 
