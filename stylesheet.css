@@ -6,16 +6,15 @@ body, html {
 }
 
 header {
-  height: 100%;
 }
 
 nav {
   width: 95%;
 }
 
-nav p {
+.logo {
   float: left;
-  padding-left: 10%;
+  padding-left: 8%;
   font-weight: bolder;
   font-size: 20px;
 }
@@ -23,11 +22,12 @@ nav p {
 nav ul {
   list-style: none;
   float:right;
+  padding-top: 8px;
 }
 
 nav li {
   float:left;
-  padding-right: 30px;
+  padding-right: 20px;
 }
 
 .hero {
@@ -42,7 +42,7 @@ nav li {
 
 header {
   clear: both;
-  height: 50px;
+
 }
 
 .main {
