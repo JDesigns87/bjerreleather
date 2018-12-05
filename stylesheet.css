@@ -102,3 +102,16 @@ header {
 .underlag {
   width: 100%;
 }
+
+
+--------/*til landingpage */--------
+
+.landing {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  }
+.privatside {height:100vh;background-image: url(images/privatside.jpg); background-position: center}
+.erhvervside {height:100vh;background-image: url(images/erhvervside.jpg); background-position: inherit}
+.baggrundsbillede {width:100%;}
+
+
