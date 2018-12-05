@@ -108,7 +108,7 @@ header {
 }
 
 
-<<<<<<< HEAD
+
 --------/*til landingpage */--------
 
 .landing {
@@ -118,10 +118,7 @@ header {
 .privatside {width: 100%; height: 100vh;}
 .erhvervside { }
 
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
 #privat {
   width: 100%;
 }
@@ -140,9 +137,7 @@ header {
   position: absolute;
     left: 16px;
     padding-left: 49%; }
-=======
->>>>>>> master
-=======
+
 @media only screen and (max-width: 600px) {
 
   .main {
