@@ -31,7 +31,13 @@ nav li {
 }
 
 .hero {
+  width: 100%;
   clear: both;
+  margin-bottom: 10%;
+}
+
+.banner {
+  width: 100%;
 }
 
 header {
@@ -44,15 +50,55 @@ header {
   grid-template-columns: 1fr 1fr;
   }
 
+.knap {
+  width: 50%;
+  height: 50px;
+  color: white;
+  background-color: #343E6F;
+  border: none;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .info1 {
-  width: 70%;
+  padding: 10%;
+  padding-top: 20%;
   text-align: center;
+  justify-content: center;
 }
 .info2 {
-  width: 70%;
+  padding: 10%;
+  padding-top: 20%;
   text-align: center;
+  justify-content: center;
 }
 .info3 {
-  padding: 40px;
+  padding: 12%;
+  padding-top: 30%;
   text-align: center;
+  justify-content: center;
+}
+
+.box1 {
+  width: 100%;
+}
+
+.taske {
+  width: 100%;
+}
+
+.box2 {
+  width: 100%;
+}
+
+.kvalitet {
+  width: 100%;
+}
+
+.box3 {
+  width: 100%;
+}
+
+.underlag {
+  width: 100%;
 }
