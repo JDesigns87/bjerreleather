@@ -46,18 +46,19 @@ header {
 
 }
 
-.main {
+.grid1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   }
 
 .knap {
   width: 50%;
-  height: 50px;
+  height: 70px;
   color: white;
   background-color: #343E6F;
   border: none;
-  font-size: 20px;
+  font-size: 22px;
+  font-weight:bold;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -69,16 +70,13 @@ header {
   font-size: 25px;
 }
 .info2 {
-<<<<<<< Updated upstream
   max-width: 600px;
-=======
-  max-width: 400px;
->>>>>>> Stashed changes
   padding: 20% 10% 0 20%;
   text-align: center;
   justify-content: center;
   font-size: 25px;
 }
+
 .info3 {
   max-width: 600px;
   padding: 30% 10% 0 10%;
@@ -113,69 +111,87 @@ header {
 
 --------/*Samarbejdspartnere */--------
 
-#samarbejdspartnere {  
-    text-align: center;
-    padding-top: 5%;
-    padding-bottom: 2%;
-    font-size: 20px;
-}
+
 
 .samarbejdspartnere {
+  width: 100%;
+  }
+
+.samarbejdspartnere h2 {
+  text-align: center;
+  margin: 46px auto 40px auto;
+  font-size: 40px;
+}
+
+#grid2 {
   display: grid;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 400px;
   grid-template-columns: 1fr 1fr 1fr;
-  }
-
-.box4 {
-    width: 100%;
-    background-image: url(images/hotel-marriott.jpg);
-    background-repeat: no-repeat;
-    height: 100px;
+  grid-template-rows: 1fr;
+  grid-gap: 30px;
+  grid-template-areas:
+  'kunde1 kunde3 kunde3'
 }
 
-
-
-.box5 {
-    width: 100%;
-    background-image: url(images/velofit.jpg);
-    background-repeat: no-repeat;
-    
+.kunde1 {
+  grid-area: kunde1;
+}
+.kunde2 {
+  grid-area: kunde2;
+}
+.kunde3 {
+  grid-area: kunde3;
 }
 
-.box6 {
-    width: 100%;
-    background-image: url(images/erik-arkitekter.jpg);
-    background-repeat: no-repeat;
+.billede1 {
+  width: 100%;
 }
 
+.billede2 {
+  width: 100%;
+}
 
---------/*til landingpage */--------
+.billede3 {
+  width: 100%;
+}
 
-.landing {
+#grid3 {
   display: grid;
+  width: 90%;
+  margin: auto;
   grid-template-columns: 1fr 1fr;
-  }
-.privatside {width: 100%; height: 100vh;}
-.erhvervside { }
+  margin-bottom: 100px;
+}
 
-
-#privat {
+input {
   width: 100%;
 }
 
-#erhverv {
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
   width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
-#bjerretekst {
-  position: absolute;
-      left: 16px;
-      padding-left: 44%;
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
-#leathertekst {
-  position: absolute;
-    left: 16px;
-    padding-left: 49%; }
+.desc {
+  padding: 15px;
+  font-size: 22px;
+  padding: 20px;
+}
 
 @media only screen and (max-width: 600px) {
 
