@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="stylesheet.css">
+  <script type="text/javascript" src="js/anime.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <title>BjerreLeather</title>
 </head>
@@ -26,7 +27,7 @@
 <!-- Main med opbygning i grid -->
   <main>
     <section class="hero"><img class="banner" src="images/hero.jpg" alt=""></section>
-    <article class="main">
+    <article class="grid1">
       <section class="box1"><img class="taske" src="images/taske.png" alt=""></section>
       <section>
         <section class="info1">
@@ -60,18 +61,59 @@
           </section>
       </section>
     </article>
-    <section id='samarbejdspartnere'><h2>Samarbejdspartnere</h2></section>
-    <article class="samarbejdspartnere">
-      <section class="box4">
-        Marriott Hotel
-      </section>
-      <section class="box5">Velofit</section>
-      <section class="box6">Erik Arkitekter</section>
-    </article>
 
-    <article>
-      <section></section>
-      <section></section>
+      <section class="samarbejdspartnere"><h2>Samarbejdspartnere</h2></section>
+
+      <article id="grid2">
+        <div class="card-container">
+              <div class="card">
+                <div class="front">
+                  A
+                </div>
+                <div class="back">
+                  B
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+                  <div class="card1">
+                    <div class="front">
+                      A
+                    </div>
+                    <div class="back">
+                      B
+                    </div>
+                  </div>
+                </div>
+                <div class="card-container">
+                      <div class="card2">
+                        <div class="front">
+                          C
+                        </div>
+                        <div class="back">
+                          B
+                        </div>
+                      </div>
+                    </div>
+      </article>
+
+
+    <article id="grid3">
+      <form action="/action_page.php">
+        virksomhed:<br>
+        <input type="text" name="firstname" value="Mickey">
+        <br>
+        Emne<br>
+        <input type="text" name="lastname" value="Mouse">
+        <br>
+        virksomhed:<br>
+        <input type="text" name="firstname" value="Mickey">
+        <br>
+        <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+      <center><section><h3>Ris og Ros</h3></section></center>
     </article>
   </main>
 
@@ -80,4 +122,30 @@
   </footer>
 
 </body>
+
 </html>
+
+<script>var card = document.querySelector(".card");
+var playing = false;
+var card = document.querySelector(".card1");
+var playing = false;
+var card = document.querySelector(".card2");
+var playing = false;
+
+card.addEventListener('click',function() {
+  if(playing)
+    return;
+
+  playing = true;
+  anime({
+    targets: card,
+    scale: [{value: 1}, {value: 1.4}, {value: 1, delay: 250}],
+    rotateY: {value: '+=180', delay: 200},
+    easing: 'easeInOutSine',
+    duration: 400,
+    complete: function(anim){
+       playing = false;
+    }
+  });
+});
+</script>
