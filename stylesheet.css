@@ -61,6 +61,7 @@ header {
   font-size: 22px;
   font-weight:bold;
   font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
 }
 
 .info1 {
