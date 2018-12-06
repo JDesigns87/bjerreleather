@@ -25,7 +25,7 @@ h1 {
   color: #323232;
 }
 
-.tryk {
+#sendp {
     background: rgba(0, 0, 0, 0);
     border: solid 2px; color: #323232;
     color: #323232;
@@ -37,21 +37,24 @@ h1 {
     margin-left: 43%;
     margin-top: 38%;
     font-family: 'Montserrat', sans-serif;
-  
 
 }
 
-.trykp {
+#send {
     background: rgba(0, 0, 0, 0);
     border: solid 2px; color: #323232;
     color: #323232;
     padding: 0.5% 2%;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 20px;
     margin-left: 20%;
     font-family: 'Montserrat', sans-serif;
 
-
 }
+
+#send a {text-decoration: none;
+color: #323232;}
+
+#sendp a {text-decoration: none;
+color: #323232;}
