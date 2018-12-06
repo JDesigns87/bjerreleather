@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="stylesheet.css">
+  <script type="text/javascript" src="js/anime.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <title>BjerreLeather</title>
 </head>
@@ -64,33 +65,36 @@
       <section class="samarbejdspartnere"><h2>Samarbejdspartnere</h2></section>
 
       <article id="grid2">
-        <div class="dropdown">
-            <img class="billede1" src="images/hotel-marriott.jpg" alt="Cinque Terre">
-            <div class="dropdown-content">
-            <div class="desc"><h3>Marriott</h3>I samarbejde med Marriot Hotel, fik jeg til opgave at
-              skulle lave et større parti af skriveunderlag. Her blev der brugt højkvalitets
-              læder, i en lys farve, der giver underlagene et rent og stilfuldt look. </div>
-            </div>
-          </div>
-          <div class="dropdown">
-              <img class="billede2" src="images/velofit.jpg" alt="Cinque Terre">
-              <div class="dropdown-content">
-              <div class="desc"> <h3>Velofit</h3>Jeg stod overfor en udfordring, da det kom til opgaven med
-                Velofit. Her skulle jeg lave en saddeltaske, hvilket var helt nyt for mig.
-                Med et godt samarbejde, fandt vi frem til en stilfuld,
-                simpel taske der kunne indeholde en luftpatron, en ekstra cykelslange og dækjern. </div>
-              </div>
-            </div>
-            <div class="dropdown">
-                <img class="billede3" src="images/erik-arkitekter.jpg" alt="Cinque Terre">
-                <div class="dropdown-content">
-                <div class="desc"><h3>Erik Arkitekterne</h3>
-                  I samarbejde med Marriot Hotel, fik jeg til opgave at
-                  skulle lave et større parti af skriveunderlag. Her blev der
-                  brugt højkvalitets læder, i en lys farve, der giver underlagene
-                  et rent og stilfuldt look. </div>
+        <div class="card-container">
+              <div class="card">
+                <div class="front">
+                  A
+                </div>
+                <div class="back">
+                  B
                 </div>
               </div>
+            </div>
+            <div class="card-container">
+                  <div class="card1">
+                    <div class="front">
+                      A
+                    </div>
+                    <div class="back">
+                      B
+                    </div>
+                  </div>
+                </div>
+                <div class="card-container">
+                      <div class="card2">
+                        <div class="front">
+                          C
+                        </div>
+                        <div class="back">
+                          B
+                        </div>
+                      </div>
+                    </div>
       </article>
 
 
@@ -118,4 +122,30 @@
   </footer>
 
 </body>
+
 </html>
+
+<script>var card = document.querySelector(".card");
+var playing = false;
+var card = document.querySelector(".card1");
+var playing = false;
+var card = document.querySelector(".card2");
+var playing = false;
+
+card.addEventListener('click',function() {
+  if(playing)
+    return;
+
+  playing = true;
+  anime({
+    targets: card,
+    scale: [{value: 1}, {value: 1.4}, {value: 1, delay: 250}],
+    rotateY: {value: '+=180', delay: 200},
+    easing: 'easeInOutSine',
+    duration: 400,
+    complete: function(anim){
+       playing = false;
+    }
+  });
+});
+</script>
