@@ -1,291 +1,142 @@
 body, html {
   margin:0;
-  padding:0;
+  padding: 0;
   font-family: 'Montserrat', sans-serif;
-  width: 100%;
-  color: #323232;
 }
 
-header {
-}
-
-nav {
-  width: 95%;
-}
-
-.logo {
-  float: left;
-  padding-left: 8%;
-  font-weight: bolder;
-  font-size: 30px;
-}
-
-nav ul {
-  list-style: none;
-  float:right;
-  padding-top: 8px;
-  font-size: 25px;
-}
-
-nav li {
-  float:left;
-  padding-right: 30px;
-}
-
-.hero {
-  width: 100%;
-  clear: both;
-  margin-bottom: 10%;
-}
-
-.banner {
-  width: 100%;
-}
-
-header {
-  clear: both;
-
-}
-
-.grid1 {
+#grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  }
-
-.knap {
-  width: 50%;
-  height: 70px;
-  color: white;
-  background-color: #343E6F;
-  border: none;
-  font-size: 22px;
-  font-weight:bold;
-  font-family: 'Montserrat', sans-serif;
-  cursor: pointer;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  'header'
+  'hero'
+  'produkter'
+  'taske'
+  'kvalitet'
+  'ur'
+  'sustain'
+  'underlag'
+  'work'
 }
 
-.info1 {
-  max-width: 700px;
-  padding: 20% 10% 0 10%;
-  text-align: center;
-  justify-content: center;
-  font-size: 25px;
-}
-.info2 {
-  max-width: 600px;
-  padding: 20% 10% 0 20%;
-  text-align: center;
-  justify-content: center;
-  font-size: 25px;
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
 }
 
-.info3 {
-  max-width: 600px;
-  padding: 30% 10% 0 10%;
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #323232;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    color: white;;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+.topnav.responsive {position: relative;}
+.topnav.responsive a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+
+header {
+  grid-area: header;
+ }
+
+#hero {
+  grid-area: hero;
+
+}
+
+#hero img {
+  width: 100%;
+}
+
+.info {
+  max-width: 400px;
+  margin: auto;
   text-align: center;
-  justify-content: center;
-  font-size: 25px;
+  padding: 70px 40px 70px 40px;
 }
 
 .box1 {
-  width: 120%;
+  grid-area: taske;
 }
 
-.taske {
+.box1 img {
   width: 100%;
 }
 
 .box2 {
-  width: 100%;
-}
-
-.kvalitet {
-  width: 100%;
+  grid-area: produkter;
 }
 
 .box3 {
-  width: 120%;
+  grid-area: kvalitet;
 }
 
-.underlag {
+.box4 {
+  grid-area: ur;
+}
+
+.box4 img {
   width: 100%;
 }
---------/*Samarbejdspartnere */--------
 
-h1{
-  font-size: 2.5rem;
-  font-family: 'Montserrat';
-  font-weight: normal;
-  color: #444;
+.box5 {
+  grid-area: underlag;
+}
+
+.box5 img {
+  width: 100%;
+}
+
+.box6 {
+  grid-area: sustain;
+}
+
+#samarbejde {
+  grid-area: work;
+}
+
+#samarbejde h2 {
   text-align: center;
-  margin: 2rem 0;
 }
 
-.wrapper{
-  width: 100%;
-  margin: 0 auto;
-  margin: auto;
+.box7 {
+  grid-area: kontakt;
 }
 
-.cols{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.box8 {
+  grid-area: ros;
+  background-color: green;
 }
 
-.col{
-  width: calc(25% - 2rem);
-  margin: 1rem;
-  cursor: pointer;
-}
-
-.container{
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-	-webkit-perspective: 1000px;
-	        perspective: 1000px;
-}
-
-.front,
-.back{
-  background-size: cover;
-	background-position: center;
-	-webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-	transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-	-o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-	-webkit-backface-visibility: hidden;
-	        backface-visibility: hidden;
-	text-align: center;
-	min-height: 380px;
-	height: auto;
-	border-radius: 10px;
-	color: #fff;
-	font-size: 1.2rem;
-}
-
-.inner img {
-  width:80%;
-  margin: auto;
-  background-color: #fff;
-  border-radius: 5px;
-  padding:5px;
-}
-
-.back{
-  background: #cedce7;
-  background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-  background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-  background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-}
-
-.front:after{
-	position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    content: '';
-    display: block;
-    opacity: .6;
-    background-color: #000;
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-    border-radius: 10px;
-}
-.container:hover .front,
-.container:hover .back{
-    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
-}
-
-.back{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
-.inner{
-    -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
-            transform: translateY(-50%) translateZ(60px) scale(0.94);
-    top: 50%;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    padding: 2rem;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    outline: 1px solid transparent;
-    -webkit-perspective: inherit;
-            perspective: inherit;
-    z-index: 2;
-}
-
-.container .back{
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-}
-
-.container .front{
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-}
-
-.container:hover .back{
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
-
-.container:hover .front{
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
-
-.front .inner p{
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  position: relative;
-}
-
-.front .inner p:after{
-  content: '';
-  width: 4rem;
-  height: 2px;
-  position: absolute;
-  background: #C6D4DF;
-  display: block;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  bottom: -.75rem;
-}
-
-.front .inner span{
-  color: rgba(255,255,255,0.7);
-  font-family: 'Montserrat';
-  font-weight: 300;
-}
-
-.samarbejdspartnere {
+#samarbejdspartnere {
   width: 100%;
   }
 
@@ -295,34 +146,73 @@ h1{
   font-size: 40px;
 }
 
-#grid2 {
-  display: grid;
-  width: 100%;
-  margin: auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
 
-}
+@media only screen and (min-width: 700px) {
 
-#grid3 {
+#grid {
   display: grid;
-  width: 90%;
-  margin: auto;
+  height: 100vh;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 100px;
-  margin-top: 200px;
+  grid-template-areas:
+  'header header'
+  'hero hero'
+  'taske produkter'
+  'kvalitet ur'
+  'underlag sustain'
+  'work work'
 }
 
-.ros p {
-  width: 60%;
+#hero img {
+  margin-bottom: 70px;
 }
 
-input {
-  width: 80%;
+.info {
+  max-width: 400px;
+  margin: auto auto auto auto;
+  text-align: center;
+  padding: 30px;
 }
 
-footer {
-  width: 100%;
-  height: 300px;
-  background-color: #323232;
+}
+
+@media only screen and (min-width: 800px) {
+
+.info {
+    max-width: 400px;
+    text-align: center;
+    padding: 30px;
+    margin: 15% auto;
+  }
+
+}
+
+/* When the screen is less than 700 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 700px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .info {
+      max-width: 400px;
+      text-align: center;
+      padding: 30px;
+      margin: 15% auto;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 700px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
