@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="stylesheet.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.1.2/jquery.flip.min.js" type="text/javascript"></script>
+  <script src="js/popupjava.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <title>BjerreLeather</title>
 </head>
@@ -66,25 +67,105 @@
     </section>
 
     <section id="grid3">
-      <section class="kasse">
+      <section class="kasse" >
+       <a href="#" id="popupknap">
         <img src="images/hotel-marriott.jpg" alt="">
+        </a>
       </section>
       <section class="kasse">
+           <a href="#" id="popupknap2">
         <img src="images/hotel-marriott.jpg" alt="">
+          </a>
       </section>
       <section class="kasse">
-        <img src="images/hotel-marriott.jpg" alt="">  
+            <a href="#" id="popupknap3">
+        <img src="images/hotel-marriott.jpg" alt=""> 
+          </a> 
       </section>
     </section>
 
 
 </article>
 
+<!--- popupbox 1--->
+<div class="bg-modal1">
+<div class="modal-content">
+<div class="close">+</div>
+<img src="images/marriottlogo.png" alt="Marriott hotel logo" class="kundelogo">     
+<h2 class="popupoverskrift">Skriveunderlag for Marriott Hotel i København</h2>
+<img src="images/hotel-marriott.jpg" alt="Billede af underlag fra Marriott hotel" class="popupbillede">
+
+<h2 class="popupoverskrift">Skriveunderlag for Marriott Hotel i København</h2>
+<img src="images/hotel-marriott.jpg" alt="Billede af underlag fra Marriott hotel" class="popupbillede">
+
+<h2 class="popupoverskrift">Skriveunderlag for Marriott Hotel i København</h2>
+<img src="images/hotel-marriott.jpg" alt="Billede af underlag fra Marriott hotel" class="popupbillede">
+</div>  
+
+</div> <!--bg-modal slut-->
+
+<!--- popupbox 2--->
+<div class="bg-modal2">
+<div class="modal-content">
+<div class="close2">+</div>
+<img src="images/velofitlogo.png" alt="Velofit Logo" class="kundelogo">     
+<h2 class="popupoverskrift">Saddeltaske for VeloFit</h2>
+<img src="images/velofit.jpg" alt="Billede af velofit logo" class="popupbillede">
+<h2 class="popupoverskrift">Skriveunderlag for Marriott Hotel i København</h2>
+<img src="images/hotel-marriott.jpg" alt="Billede af underlag fra Marriott hotel" class="popupbillede">
+
+<h2 class="popupoverskrift">Skriveunderlag for Marriott Hotel i København</h2>
+<img src="images/hotel-marriott.jpg" alt="Billede af underlag fra Marriott hotel" class="popupbillede">
+</div>  
+
+</div> <!--bg-modal slut-->
+
+<!--- popupbox 3--->
+<div class="bg-modal3">
+<div class="modal-content">
+<div class="close3">+</div>
+<img src="images/velofitlogo.png" alt="Velofit Logo" class="kundelogo">     
+<h2 class="popupoverskrift">Notesbogomslag for ERIK arkitekter </h2>
+<img src="images/erik-arkitekter.jpg" alt="Billede af Erik arkitekter" class="popupbillede">
+<h2 class="popupoverskrift">Skriveunderlag for Marriott Hotel i København</h2>
+<img src="images/hotel-marriott.jpg" alt="Billede af underlag fra Marriott hotel" class="popupbillede">
+
+<h2 class="popupoverskrift">Skriveunderlag for Marriott Hotel i København</h2>
+<img src="images/hotel-marriott.jpg" alt="Billede af underlag fra Marriott hotel" class="popupbillede">
+</div>  
+
+</div> <!--bg-modal slut-->
+
 </body>
 </html>
 
 
-<script>function myFunction() {
+<script>
+    document.getElementById('popupknap').addEventListener('click',function(){
+    document.querySelector('.bg-modal1').style.display = 'flex';  
+});
+    
+    document.querySelector('.close').addEventListener('click', function (){
+    document.querySelector('.bg-modal1').style.display = 'none'; 
+    });
+    
+    document.getElementById('popupknap2').addEventListener('click',function(){
+    document.querySelector('.bg-modal2').style.display = 'flex';  
+});
+    
+    document.querySelector('.close2').addEventListener('click', function (){
+    document.querySelector('.bg-modal2').style.display = 'none'; 
+    });
+    
+     document.getElementById('popupknap3').addEventListener('click',function(){
+    document.querySelector('.bg-modal3').style.display = 'flex';  
+});
+    
+    document.querySelector('.close3').addEventListener('click', function (){
+    document.querySelector('.bg-modal3').style.display = 'none'; 
+    });
+    
+    function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
         x.className += " responsive";
