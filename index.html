@@ -58,34 +58,31 @@
     </section>
 
     <section id="grid3">
-     
+
       <section class="kasse" >
         <img src="images/marriottxbjerreleather.jpg" alt="Billede af skriveunderlag til Marriott Hotel i København" class="kundebillede">
    <a href="#" id="popupknap1">
          <button class="laesmere">
-         <h3>Læs mere</h3>
+         Læs mere
        </button>
           </a>
       </section>
-      
+
       <section class="kasse">
+        <a href="#" id="popupknap2">
+       <button class="laesmere">Læs mere</button>
+        </a>
         <img src="images/velofitxbjerreleather.jpg" alt="Billede af sadeltaske til        Velofit" class="kundebillede">
-          <a href="#" id="popupknap2">
-         <button class="laesmere">
-         <h3>Læs mere</h3>
-         </button>
-          </a>
       </section>
-      
-      <section class="kasse">        
-        <img src="images/erikarkitekterxbjerreleather.jpg" alt="Billede af omslag til notesbøger til ERIKarkitekter" class="kundebillede"> 
+
+      <section class="kasse">
+        <img src="images/erikarkitekterxbjerreleather.jpg" alt="Billede af omslag til notesbøger til ERIKarkitekter" class="kundebillede">
          <a href="#" id="popupknap3">
          <button class="laesmere">
-         <h3>Læs mere</h3>
+         Læs mere
          </button>
-          </a> 
-      </section>
-      
+        </a>
+
     </section><!--grid3-->
 
 
@@ -95,9 +92,9 @@
 <div class="bg-modal1">
 <div class="modal-content">
 <div class="close">+</div>
-<img src="images/marriottlogo.png" alt="Marriott hotel logo" class="kundelogo">     
+<img src="images/marriottlogo.png" alt="Marriott hotel logo" class="kundelogo">
 <h2 class="popupoverskrift">Skriveunderlag for Marriott Hotel i København</h2>
-</div>  
+</div>
 
 </div> <!--bg-modal slut-->
 
@@ -105,9 +102,9 @@
 <div class="bg-modal2">
 <div class="modal-content">
 <div class="close2">+</div>
-<img src="images/velofitlogo.png" alt="Velofit Logo" class="kundelogo">     
+<img src="images/velofitlogo.png" alt="Velofit Logo" class="kundelogo">
 <h2 class="popupoverskrift">Sadeltaske for VeloFit</h2>
-</div>  
+</div>
 
 </div> <!--bg-modal slut-->
 
@@ -115,10 +112,10 @@
 <div class="bg-modal3">
 <div class="modal-content">
 <div class="close3">+</div>
-<img src="images/erikarkitekterlogo.png" alt="ERIK arkitekter Logo" class="kundelogo">     
+<img src="images/erikarkitekterlogo.png" alt="ERIK arkitekter Logo" class="kundelogo">
 <h2 class="popupoverskrift">Notesbogomslag for ERIK arkitekter </h2>
 
-</div>  
+</div>
 
 </div> <!--bg-modal slut-->
 
@@ -128,29 +125,29 @@
 
 <script>
     document.getElementById('popupknap1').addEventListener('click',function(){
-    document.querySelector('.bg-modal1').style.display = 'flex';  
+    document.querySelector('.bg-modal1').style.display = 'flex';
 });
-    
+
     document.querySelector('.close').addEventListener('click', function (){
-    document.querySelector('.bg-modal1').style.display = 'none'; 
+    document.querySelector('.bg-modal1').style.display = 'none';
     });
-    
+
     document.getElementById('popupknap2').addEventListener('click',function(){
-    document.querySelector('.bg-modal2').style.display = 'flex';  
+    document.querySelector('.bg-modal2').style.display = 'flex';
 });
-    
+
     document.querySelector('.close2').addEventListener('click', function (){
-    document.querySelector('.bg-modal2').style.display = 'none'; 
+    document.querySelector('.bg-modal2').style.display = 'none';
     });
-    
+
      document.getElementById('popupknap3').addEventListener('click',function(){
-    document.querySelector('.bg-modal3').style.display = 'flex';  
+    document.querySelector('.bg-modal3').style.display = 'flex';
 });
-    
+
     document.querySelector('.close3').addEventListener('click', function (){
-    document.querySelector('.bg-modal3').style.display = 'none'; 
+    document.querySelector('.bg-modal3').style.display = 'none';
     });
-    
+
     function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
