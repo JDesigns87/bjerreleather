@@ -17,6 +17,7 @@ body, html {
   'sustain'
   'underlag'
   'work'
+  'kasse'
 }
 
 /* Add a black background color to the top navigation */
@@ -127,6 +128,18 @@ header {
   text-align: center;
 }
 
+#grid3 {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-area: kasse;
+  grid-template-columns: 1fr;
+}
+
+.kasse img {
+  width: 100%;
+}
+
 .box7 {
   grid-area: kontakt;
 }
@@ -134,16 +147,6 @@ header {
 .box8 {
   grid-area: ros;
   background-color: green;
-}
-
-#samarbejdspartnere {
-  width: 100%;
-  }
-
-.samarbejdspartnere h2 {
-  text-align: center;
-  margin: 46px auto 40px auto;
-  font-size: 40px;
 }
 
 
@@ -160,6 +163,22 @@ header {
   'kvalitet ur'
   'underlag sustain'
   'work work'
+  'reference reference'
+  'kasse kasse'
+}
+
+#grid3 {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-area: kasse;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 5%;
+}
+
+.kasse img {
+  width: 100%;
 }
 
 #hero img {
