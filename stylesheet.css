@@ -225,15 +225,20 @@ header {
     cursor:pointer;
 
 }
+p{text-align: left;}
+h2 {text-align: left}
 .kundelogo {width: 20%;}
 .popupoverskrift {font-size: 2.2em;}
 .popupbillede {max-width: 50%}
 .kundebillede {}
 .kasse {position: relative;}
-#popupknap1 {position: absolute; left: 42%; top: 70%;}
-#popupknap2 {position: absolute; left: 42%; top: 70%;}
-#popupknap3 {position: absolute; left: 42%; top: 70%;}
-.laesmere {}
+#popupknap1 {position: absolute; left:50%; top: 65%; width: 35%;margin-left: -17.5%;}
+#popupknap2 {position: absolute; left:50%; top: 65%; width: 35%;margin-left: -17.5%}
+#popupknap3 {position: absolute; left:50%; top: 65%; width: 35%;margin-left: -17.5%}
+.laesmere {border-radius: 2px; background: none; border: white 2px solid; text-transform: uppercase; color:white; padding: 8% 10%; width: 120%; cursor: pointer; font-size: 100%; font-weight: 500; display: block; }
+a {text-decoration: none;}
+#samarbejde {margin-top: 5%;}
+
 
 @media only screen and (min-width: 700px) {
 
@@ -280,6 +285,9 @@ header {
     h2 {font-size: 1.8em}
 }
 
+.laesmere {font-size: 80%}
+
+
 @media only screen and (min-width: 800px) {
 
 .info {
@@ -288,6 +296,10 @@ header {
     padding: 30px;
     margin: 15% auto;
   }
+    
+.laesmere {font-size: 100%}
+    
+    p {font-size:1.3em}
 
 }
 
