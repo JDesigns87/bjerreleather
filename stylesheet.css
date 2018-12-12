@@ -240,6 +240,39 @@ a {text-decoration: none;}
 #samarbejde {margin-top: 5%;}
 
 
+.textboks {font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	color: black; text-align: left; padding-top: 20px}
+
+.udfyld {border: solid 1px; margin-top: 5px; margin-left: -20px; padding-right: 50px;}
+
+.udfyld1 {border: solid 1px; margin-top: 5px; padding-bottom: 50px; margin-left: -20px; padding-right: 50px;}
+
+
+#send {font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	color: white; text-align: center; padding-top: 40px; margin-bottom: -56px; margin-bottom: 10px;}
+
+
+#send a {
+	color: white;
+	text-decoration: none;
+	padding-left: 17px;
+	padding-right: 17px;
+	padding-bottom: 5px;
+  padding-top: 5px;
+  background-color: #325383;
+}
+
+
+  .info1 {
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    padding: 70px 40px 70px 40px;
+  }
+
+
 @media only screen and (min-width: 700px) {
 
 #grid {
@@ -296,9 +329,9 @@ a {text-decoration: none;}
     padding: 30px;
     margin: 15% auto;
   }
-    
+
 .laesmere {font-size: 100%}
-    
+
     p {font-size:1.3em}
 
 }
