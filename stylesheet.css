@@ -18,8 +18,16 @@ body, html {
   'underlag'
   'work'
   'kasse'
+  'info'
+  'kontakt'
+  'footer'
+
+
 }
 
+#footer {grid-area: footer;}
+
+#kontakt-tekst {grid-area: info;}
 /* Add a black background color to the top navigation */
 .topnav {
     overflow: hidden;
@@ -140,6 +148,8 @@ header {
   width: 90%; padding:5%;
 }
 
+.kasse {margin-bottom: 30px;}
+
 .box7 {
   grid-area: kontakt;
 }
@@ -240,9 +250,14 @@ a {text-decoration: none;}
 #samarbejde {margin-top: 5%;}
 
 
-.textboks {font-family: 'Montserrat', sans-serif;
+.textboks {
+  font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
-	color: black; text-align: left; padding-top: 20px}
+	color: black;
+  text-align: left;
+  padding-top: 20px;
+  margin-left: -20px;
+}
 
 .udfyld {border: solid 1px; margin-top: 5px; margin-left: -20px; padding-right: 50px;}
 
@@ -251,7 +266,12 @@ a {text-decoration: none;}
 
 #send {font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
-	color: white; text-align: center; padding-top: 40px; margin-bottom: -56px; margin-bottom: 10px;}
+	color: white;
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: -56px;
+  margin-bottom: 150px;
+}
 
 
 #send a {
@@ -269,7 +289,51 @@ a {text-decoration: none;}
     max-width: 400px;
     margin: auto;
     text-align: center;
-    padding: 70px 40px 70px 40px;
+    padding: 40px 40px 70px 40px;
+    grid-area: kontakt;
+  }
+
+  #kontakt-tekst {margin-top: -20px;}
+
+  #kontakt-tekst p {
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+    padding: 10px 40px 20px 40px;
+  }
+
+  #kontakt-tekst h2 {
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+    padding: 70px 40px 5px 40px;
+  }
+
+  #footer {background-color: #323232;}
+
+  #fodnoteb {color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  #some {width: 170px;
+    margin: 0 auto 50px auto;}
+
+
+  .facebook {
+    max-width: 70px;
+    float: left;
+    margin-right: 30px;
+
+
+  }
+
+  .instagram {
+    max-width: 70px;
+
   }
 
 
@@ -288,7 +352,10 @@ a {text-decoration: none;}
   'work work'
   'reference reference'
   'kasse kasse'
+  'info kontakt'
+  'footer footer'
 }
+
 
 #grid3 {
   width: 90%;
@@ -320,6 +387,28 @@ a {text-decoration: none;}
 
 .laesmere {font-size: 80%}
 
+.info1 {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  grid-area: kontakt;
+}
+
+#kontakt-tekst p {
+  max-width: 400px;
+  margin: auto;
+  text-align: left;
+  padding: 10px 40px 20px 40px;
+}
+
+#kontakt-tekst h2 {
+  max-width: 400px;
+  margin: auto;
+  text-align: left;
+  padding: 70px 40px 5px 40px;
+}
+
+
 
 @media only screen and (min-width: 800px) {
 
@@ -335,6 +424,8 @@ a {text-decoration: none;}
     p {font-size:1.3em}
 
 }
+
+.kasse {margin-bottom: 90px;}
 
 /* When the screen is less than 700 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 700px) {
