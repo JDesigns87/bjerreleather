@@ -265,6 +265,9 @@ h2 {text-align: left}
 .laesmere {border-radius: 2px; background: none; border: white 2px solid; text-transform: uppercase; color:white; padding: 8% 10%; width: 120%; cursor: pointer; font-size: 100%; font-weight: 500; display: block; }
 a {text-decoration: none;}
 #samarbejde {margin-top: 5%;}
+.imgipopup {margin: 1% 5%; max-width: 90%;}
+.popupoverskrift {text-align: center; padding: 0% 5%;}
+.popuptekst {text-align: justify; padding: 0% 5%;}
 
 
 .textboks {
@@ -431,6 +434,7 @@ a {text-decoration: none;}
 }
 
 .laesmere {font-size: 80%}
+
 
 .info1 {
   max-width: 400px;
